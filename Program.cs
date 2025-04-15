@@ -7,6 +7,9 @@ using Login_OAuth.Infrastructure.Data;
 using Login_OAuth.Infrastructure.Logging;
 using Login_OAuth.WebAPI.Extensions;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation.AspNetCore;
+using Login_OAuth.Core.Validators;
+using Login_OAuth.Core.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,12 +25,19 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
 
 // اضافه کردن سرویس‌های مورد نیاز
 builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestDtoValidator>());
+builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+builder.Services.AddFluentValidation();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // اتصال به دیتابیس
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Login OAuth API", Version = "v1" });
+});
 
 var app = builder.Build();
 
@@ -35,8 +45,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage(); // صفحه خطا برای محیط توسعه
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger(); // فعال‌سازی Swagger
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Login OAuth API v1"); // تعیین نقطه دسترسی Swagger
+        c.RoutePrefix = string.Empty; // تنظیم برای نمایش Swagger در ریشه
+    });
 }
 
 app.UseHttpsRedirection(); // هدایت به HTTPS

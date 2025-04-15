@@ -145,3 +145,4 @@ E:\project-zar\custom\.net\Login OAuth\obj\Debug\net9.0\refint\Login OAuth.dll
 E:\project-zar\custom\.net\Login OAuth\obj\Debug\net9.0\Login OAuth.pdb
 E:\project-zar\custom\.net\Login OAuth\obj\Debug\net9.0\Login OAuth.genruntimeconfig.cache
 E:\project-zar\custom\.net\Login OAuth\obj\Debug\net9.0\ref\Login OAuth.dll
+E:\project-zar\custom\.net\Login OAuth\obj\Debug\net9.0\Login OAuth.sourcelink.json
