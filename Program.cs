@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using FluentValidation.AspNetCore;
 using Login_OAuth.Core.Validators;
 using Login_OAuth.Core.DTOs;
+using Login_OAuth.WebAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,9 +26,12 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
 
 // اضافه کردن سرویس‌های مورد نیاز
 builder.Services.AddControllers();
+
+
+
 builder.Services.AddControllers()
-    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestDtoValidator>());
-builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+
 builder.Services.AddFluentValidation();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // اتصال به دیتابیس
@@ -40,6 +44,9 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
+
+// ثبت middleware
+app.UseMiddleware<ExceptionMiddleware>();
 
 // تنظیمات پایپلاین HTTP
 if (app.Environment.IsDevelopment())

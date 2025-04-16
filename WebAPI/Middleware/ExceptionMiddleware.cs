@@ -1,8 +1,8 @@
 ﻿using System.Net;
+using System.Text.Json;
 
 namespace Login_OAuth.WebAPI.Middleware
 {
-    // میدل‌ویر برای مدیریت خطاها
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
@@ -20,19 +20,45 @@ namespace Login_OAuth.WebAPI.Middleware
             }
             catch (Exception ex)
             {
-                await HandleExceptionAsync(context, ex); // مدیریت خطا
+                await HandleExceptionAsync(context, ex);
             }
         }
 
         private Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError; // وضعیت خطا
-            return context.Response.WriteAsync(new
+            var statusCode = (int)HttpStatusCode.InternalServerError;
+            var message = "خطای داخلی سرور";
+
+            // شناسایی نوع خطا
+            if (ex is UnauthorizedAccessException)
             {
-                StatusCode = context.Response.StatusCode,
-                Message = ex.Message // پیام خطا
-            }.ToString());
+                statusCode = (int)HttpStatusCode.Unauthorized;
+                message = ex.Message;
+            }
+            else if (ex is ArgumentException)
+            {
+                statusCode = (int)HttpStatusCode.BadRequest;
+                message = ex.Message;
+            }
+
+            // اگر در حالت توسعه هستیم، می‌توانیم StackTrace را نیز اضافه کنیم
+            if (context.RequestServices.GetService<IHostEnvironment>().IsDevelopment())
+            {
+                message += $" | StackTrace: {ex.StackTrace}";
+            }
+
+            context.Response.StatusCode = statusCode;
+
+            var response = new
+            {
+                StatusCode = statusCode,
+                Message = message,
+                // می‌توانید اطلاعات اضافی دیگری نیز اضافه کنید
+                Error = ex.GetType().Name
+            };
+
+            return context.Response.WriteAsync(JsonSerializer.Serialize(response));
         }
     }
 }

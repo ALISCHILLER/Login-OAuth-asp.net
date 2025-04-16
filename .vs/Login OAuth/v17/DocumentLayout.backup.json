@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "E:\\project-zar\\custom\\.net\\Login OAuth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\infrastructure\\repositories\\userrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:infrastructure\\repositories\\userrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\webapi\\controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:webapi\\controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\core\\validators\\loginrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:core\\validators\\loginrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\application\\services\\authservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:application\\services\\authservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\application\\mappings\\automapperprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:application\\mappings\\automapperprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\webapi\\controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:webapi\\controllers\\authcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|e:\\project-zar\\custom\\.net\\login oauth\\core\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D2548A6-2810-44F9-BD65-D3C81FF5C8F9}|Login OAuth.csproj|solutionrelative:core\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\DTOs\\LoginRequestDto.cs",
-              "RelativeDocumentMoniker": "Core\\DTOs\\LoginRequestDto.cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\DTOs\\LoginRequestDto.cs*",
-              "RelativeToolTip": "Core\\DTOs\\LoginRequestDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:07:09.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController .cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\WebAPI\\Controllers\\AuthController .cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthController .cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\WebAPI\\Controllers\\AuthController .cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\AuthController .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:06:38.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "LoginRequestValidator.cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\Validators\\LoginRequestValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Validators\\LoginRequestValidator.cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\Validators\\LoginRequestValidator.cs",
-              "RelativeToolTip": "Core\\Validators\\LoginRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\DTOs\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "Core\\DTOs\\LoginResponseDto.cs",
+              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\DTOs\\LoginResponseDto.cs",
+              "RelativeToolTip": "Core\\DTOs\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:02:38.934Z",
+              "WhenOpened": "2025-04-16T05:33:33.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\DTOs\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "Core\\DTOs\\LoginRequestDto.cs",
+              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\DTOs\\LoginRequestDto.cs",
+              "RelativeToolTip": "Core\\DTOs\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:56:14.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService .cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Application\\Services\\AuthService .cs",
-              "RelativeDocumentMoniker": "Application\\Services\\AuthService .cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Application\\Services\\AuthService .cs",
-              "RelativeToolTip": "Application\\Services\\AuthService .cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:33:35.606Z",
+              "WhenOpened": "2025-04-16T05:04:52.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserRepository .cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Infrastructure\\Repositories\\UserRepository .cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository .cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Infrastructure\\Repositories\\UserRepository .cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository .cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxIAAABGAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:31:04.742Z",
+              "WhenOpened": "2025-04-16T05:23:02.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AutoMapperProfile .cs",
-              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Application\\Mappings\\AutoMapperProfile .cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\AutoMapperProfile .cs",
-              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Application\\Mappings\\AutoMapperProfile .cs",
-              "RelativeToolTip": "Application\\Mappings\\AutoMapperProfile .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LoginRequestValidator.cs",
+              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\Validators\\LoginRequestValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Validators\\LoginRequestValidator.cs",
+              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\Core\\Validators\\LoginRequestValidator.cs",
+              "RelativeToolTip": "Core\\Validators\\LoginRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:29:24.78Z"
+              "WhenOpened": "2025-04-16T05:22:57.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController .cs",
+              "DocumentMoniker": "E:\\project-zar\\custom\\.net\\Login OAuth\\WebAPI\\Controllers\\AuthController .cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthController .cs",
+              "ToolTip": "E:\\project-zar\\custom\\.net\\Login OAuth\\WebAPI\\Controllers\\AuthController .cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AuthController .cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T05:22:39.723Z",
+              "EditorCaption": ""
             }
           ]
         }

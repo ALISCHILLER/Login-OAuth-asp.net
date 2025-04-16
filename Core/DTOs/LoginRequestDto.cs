@@ -9,17 +9,17 @@ namespace Login_OAuth.Core.DTOs
         public string Password { get; set; } // رمز عبور
     }
 
-    public class LoginRequestDtoValidator : AbstractValidator<LoginRequestDto>
-    {
-        public LoginRequestDtoValidator()
-        {
-            RuleFor(x => x.Username)
-                .NotEmpty()
-                .WithMessage("نام کاربری الزامی است.");
+    //public class LoginRequestDtoValidator : AbstractValidator<LoginRequestDto>
+    //{
+    //    public LoginRequestDtoValidator()
+    //    {
+    //        RuleFor(x => x.Username)
+    //            .NotEmpty()
+    //            .WithMessage("نام کاربری الزامی است.");
 
-            RuleFor(x => x.Password)
-                .NotEmpty()
-                .WithMessage("رمز عبور الزامی است.");
-        }
-    }
+    //        RuleFor(x => x.Password)
+    //            .NotEmpty()
+    //            .WithMessage("رمز عبور الزامی است.");
+    //    }
+    //}
 }

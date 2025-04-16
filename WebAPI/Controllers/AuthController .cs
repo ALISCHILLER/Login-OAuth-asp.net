@@ -5,13 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Login_OAuth.WebAPI.Controllers
 {
-    // کنترلر برای احراز هویت
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IAuthService _authService; // سرویس احراز هویت
-        private readonly IValidator<LoginRequestDto> _validator; // اعتبارسنجی
+        private readonly IAuthService _authService;
+        private readonly IValidator<LoginRequestDto> _validator;
 
         public AuthController(IAuthService authService, IValidator<LoginRequestDto> validator)
         {
@@ -19,22 +18,47 @@ namespace Login_OAuth.WebAPI.Controllers
             _validator = validator;
         }
 
-        // متد برای لاگین
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
+        public async Task<ActionResult<ApiResponse<LoginResponseDto>>> Login([FromBody] LoginRequestDto request)
         {
-            var validationResult = await _validator.ValidateAsync(request); // اعتبارسنجی
+            var validationResult = await _validator.ValidateAsync(request);
             if (!validationResult.IsValid)
-                return BadRequest(validationResult.Errors); // بازگرداندن خطاهای اعتبارسنجی
+            {
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    Message = "خطا در اعتبارسنجی",
+                    Data = validationResult.Errors
+                });
+            }
 
             try
             {
-                var response = await _authService.LoginAsync(request); // فراخوانی متد لاگین
-                return Ok(response); // بازگرداندن پاسخ موفق
+                var response = await _authService.LoginAsync(request);
+                return Ok(new ApiResponse<LoginResponseDto>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "ورود موفقیت‌آمیز بود.",
+                    Data = response
+                });
             }
             catch (UnauthorizedAccessException ex)
             {
-                return Unauthorized(ex.Message); // بازگرداندن خطای عدم دسترسی
+                return Unauthorized(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status401Unauthorized,
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = "خطای داخلی سرور",
+                    Data = ex.Message
+                });
             }
         }
     }

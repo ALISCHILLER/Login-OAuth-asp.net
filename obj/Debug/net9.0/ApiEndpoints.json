@@ -13,7 +13,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Login_OAuth.Core.DTOs.ApiResponse\u00601[[Login_OAuth.Core.DTOs.LoginResponseDto, Login OAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Login_OAuth.WebAPI.Controllers.WeatherForecastController",

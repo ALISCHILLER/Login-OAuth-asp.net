@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Login OAuth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22e0c9a44f7dbcc28b439c5dac88c26f9569c87e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+616fc619685b4464e0f56b0b4525d26efa2cc436")]
 [assembly: System.Reflection.AssemblyProductAttribute("Login OAuth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Login OAuth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

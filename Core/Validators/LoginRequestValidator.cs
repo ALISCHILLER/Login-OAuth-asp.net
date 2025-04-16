@@ -8,8 +8,13 @@ namespace Login_OAuth.Core.Validators
     {
         public LoginRequestValidator()
         {
-            RuleFor(x => x.Username).NotEmpty().WithMessage("نام کاربری نباید خالی باشد."); // بررسی خالی نبودن نام کاربری
-            RuleFor(x => x.Password).NotEmpty().WithMessage("رمز عبور نباید خالی باشد."); // بررسی خالی نبودن رمز عبور
+            RuleFor(x => x.Username)
+                .NotEmpty().WithMessage("نام کاربری نباید خالی باشد.")
+                .Length(3, 20).WithMessage("نام کاربری باید بین ۳ تا ۲۰ کاراکتر باشد."); // طول نام کاربری
+
+            RuleFor(x => x.Password)
+                .NotEmpty().WithMessage("رمز عبور نباید خالی باشد.")
+                .MinimumLength(6).WithMessage("رمز عبور باید حداقل ۶ کاراکتر باشد."); // حداقل طول رمز عبور
         }
     }
 }
